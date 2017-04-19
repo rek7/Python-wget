@@ -11,7 +11,6 @@ if isrecursive == True:
         try:
             if filename[0]=="/" or filename[0]=="":
                 filename[0] = "index"[::-1]
-            print(str(dl_location + filename[0][::-1]))
             print("Downloading: " + filename[0][::-1])
             urllib.request.urlretrieve(link['href'], dl_location + filename[0][::-1])
             print("Finished Downloading: " + filename[0][::-1])
